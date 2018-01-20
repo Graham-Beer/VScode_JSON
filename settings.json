@@ -1,12 +1,40 @@
+// Place your settings in this file to overwrite the default settings
 {
-    // Use a custom PowerShell Script Analyzer settings file for this workspace.
-    // Relative paths for this setting are always relative to the workspace root dir.
-    "powershell.scriptAnalysis.settingsPath": "./PSScriptAnalyzerSettings.psd1",
-	
-	"editor.rulers": [ 120 ],
-
-	"files.trimTrailingWhitespace": true,
-
-	"terminal.integrated.shell.windows":
-	"C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
+"files.defaultLanguage": "powershell",
+"editor.fontFamily": "Fira Code Light",
+//"editor.fontFamily":  "'Source Code Pro Light', monospace",
+//"editor.fontFamily": "Fira Sans Regular",
+"editor.fontSize": 12,
+"editor.fontLigatures": true,
+"workbench.colorTheme": "Monokai Dark Soda",
+"workbench.iconTheme": "vscode-icons",
+"workbench.statusBar.visible": true,
+"workbench.activityBar.visible": true,
+"window.zoomLevel": 0,
+"extensions.autoUpdate": true,
+"terminal.integrated.rightClickCopyPaste": true,
+"powershell.codeFormatting.preset": "Stroustrup",
+// OTBS https://en.wikipedia.org/wiki/Indentation_style
+"powershell.integratedConsole.focusConsoleOnExecute": false,
+"shellLauncher.shells.windows": [
+    {
+        "shell": "C:\\Windows\\sysnative\\cmd.exe",
+        "label": "cmd"
+    },
+    {
+        "shell": "C:\\Program Files\\PowerShell\\6.0.0-beta.1\\powershell.exe",
+        "label": "PowerShell .Net Core 6.1"
+    },
+    {
+        "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
+        "label": "Git bash"
+    },
+    {
+        "shell": "C:\\Windows\\sysnative\\bash.exe",
+        "label": "WSL Bash"
+    }
+],
+"team.showWelcomeMessage": false,
+"git.confirmSync": false,
+"git.enableSmartCommit": true
 }
